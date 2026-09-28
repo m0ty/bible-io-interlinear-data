@@ -1,0 +1,12 @@
+name: bible_io_interlinear_data
+description: Versioned prepared interlinear data and reproducible build tools.
+version: 0.1.0
+publish_to: none
+environment:
+  sdk: ^3.11.4
+dependencies:
+  bible_io: 1.2.0
+  bible_io_interlinear:
+    git:
+      url: https://github.com/m0ty/bible-io-interlinear-dart.git
+      ref: e49abb5a123e6857f249510aeb060e22d4e518f9

@@ -1,0 +1,29 @@
+name: Verify prepared data
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: '3.11.4'
+      - run: dart pub get --enforce-lockfile
+      - run: dart analyze
+      - name: Verify every prepared resource and generation input
+        run: python tool/catalog.py
+      - name: Reproduce Spanish source alignment and test failed imports
+        run: |
+          curl --fail --location --retry 3 \
+            https://raw.githubusercontent.com/loveJesus/sword-modules-chirho/79df943ef7ff280fe6d05c1e7419dcdb655c80b1/raw/LJMTIntSpaChirho.zip \
+            --output "$RUNNER_TEMP/spanish-interlinear.zip"
+          python tool/prepare_spanish_glosses.py --verify-only --source-archive "$RUNNER_TEMP/spanish-interlinear.zip"
+          python -B tool/test_prepare_spanish_glosses.py --source-archive "$RUNNER_TEMP/spanish-interlinear.zip"

@@ -1,0 +1,7 @@
+.dart_tool/
+.work/
+build/
+__pycache__/
+*.pyc
+*.previous-*/
+.spanish-glosses-*/

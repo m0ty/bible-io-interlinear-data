@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.gz binary
+*.conf binary
+assets/**/*.json -text
+assets/**/*.md -text

@@ -1,0 +1,3997 @@
+{
+  "schemaVersion": 1,
+  "reviewStatus": "AI-assisted corrections; not human-reviewed",
+  "auditDate": "2026-09-27",
+  "sourceCommit": "79df943ef7ff280fe6d05c1e7419dcdb655c80b1",
+  "sourceZipSha256": "c8844e1dc55c492bda9ae8141ab0df1eb52fac6ff7e92196e214da8068f2f5ff",
+  "boundDatasetId": "step-tahot-lqr",
+  "boundDatasetRevision": "0.1.0",
+  "license": "CC-BY-4.0",
+  "modificationNotice": "These explicitly listed Spanish study glosses were corrected by an AI assistant at user request. Upstream raw text and provenance are preserved. This is not human review or full-corpus certification.",
+  "applicationContract": [
+    "Apply only after complete ordered original-source verse matching succeeds.",
+    "Require occurrence identity and exact original raw Spanish value.",
+    "Reject duplicate, unknown, unmatched or unused correction entries.",
+    "Do not perform string-wide or Strong-number replacements."
+  ],
+  "notChanged": [
+    {
+      "occurrenceId": "TAHOT:Deu.24.15#17",
+      "original": "clame",
+      "reason": "Hebrew imperfect third-person singular in the lest-he-call clause supports Spanish subjunctive clame; adding an accent would incorrectly turn it into first-person past."
+    }
+  ],
+  "counts": {
+    "placeholder_repair": 49,
+    "orthography": 33,
+    "function_marker": 1,
+    "explanatory_meaning": 3,
+    "contextual_wording": 13
+  },
+  "corrections": [
+    {
+      "occurrenceId": "TAHOT:Num.1.3#10",
+      "original": "*-a-ellos",
+      "corrected": "a–ellos",
+      "category": "placeholder_repair",
+      "reason": "Replace incomplete asterisk with the Spanish object pronoun supported by the source suffix and contextual referent.",
+      "evidence": {
+        "surface": "אֹתָ֛ם",
+        "sourceEnglish": "<obj.>/ them",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אֹתָ֛",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "HTo",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "ם",
+            "kind": "constituent",
+            "lemma": "Op3m",
+            "morphology": [
+              {
+                "code": "Sp3mp",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "them"
+          }
+        ],
+        "context": "The adult Israelite men being counted, masculine plural people.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.1.18#01",
+      "original": "Y–*",
+      "corrected": "Y–a",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֵ֨ת",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֵ֨ת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The named people or assembled congregation support personal a.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.1.49#07",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֶת־",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֶת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.1.50#19",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֶת־",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֶת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.1.51#04",
+      "original": "*-a-él",
+      "corrected": "lo",
+      "category": "placeholder_repair",
+      "reason": "Replace incomplete asterisk with the Spanish object pronoun supported by the source suffix and contextual referent.",
+      "evidence": {
+        "surface": "אֹתוֹ֙",
+        "sourceEnglish": "<obj.>/ it",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אֹת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "HTo",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "וֹ֙",
+            "kind": "constituent",
+            "lemma": "Os3m",
+            "morphology": [
+              {
+                "code": "Sp3ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "it"
+          }
+        ],
+        "context": "The tabernacle (el tabernáculo) is taken down.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.1.51#09",
+      "original": "*-a-él",
+      "corrected": "lo",
+      "category": "placeholder_repair",
+      "reason": "Replace incomplete asterisk with the Spanish object pronoun supported by the source suffix and contextual referent.",
+      "evidence": {
+        "surface": "אֹת֖וֹ",
+        "sourceEnglish": "<obj.>/ it",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אֹת֖",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "HTo",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "וֹ",
+            "kind": "constituent",
+            "lemma": "Os3m",
+            "morphology": [
+              {
+                "code": "Sp3ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "it"
+          }
+        ],
+        "context": "The same tabernacle (el tabernáculo) is set up.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.3.6#06",
+      "original": "*-a-él",
+      "corrected": "la",
+      "category": "placeholder_repair",
+      "reason": "Replace incomplete asterisk with the Spanish object pronoun supported by the source suffix and contextual referent.",
+      "evidence": {
+        "surface": "אֹת֔וֹ",
+        "sourceEnglish": "<obj.>/ it",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אֹת֔",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "HTo",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "וֹ",
+            "kind": "constituent",
+            "lemma": "Os3m",
+            "morphology": [
+              {
+                "code": "Sp3ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "it"
+          }
+        ],
+        "context": "The tribe of Levi is brought before Aaron; Spanish tribu is feminine despite Hebrew masculine matteh.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.3.6#11",
+      "original": "*-a-él",
+      "corrected": "a–él",
+      "category": "placeholder_repair",
+      "reason": "Replace incomplete asterisk with the Spanish object pronoun supported by the source suffix and contextual referent.",
+      "evidence": {
+        "surface": "אֹתֽוֹ׃",
+        "sourceEnglish": "<obj.>/ him",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אֹתֽ",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "HTo",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "וֹ",
+            "kind": "constituent",
+            "lemma": "Os3m",
+            "morphology": [
+              {
+                "code": "Sp3ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "him"
+          },
+          {
+            "surface": "׃",
+            "kind": "punctuation",
+            "lemma": "׃",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Aaron is the person served, not the tribe that serves.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.3.7#04",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֶת־",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֶת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.3.8#07",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֶת־",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֶת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.3.10#01",
+      "original": "Y–*",
+      "corrected": "Y–a",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֶת־",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֶת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The named people or assembled congregation support personal a.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.3.10#03",
+      "original": "y–*",
+      "corrected": "y–a",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֶת־",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֶת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The named people or assembled congregation support personal a.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.3.16#02",
+      "original": "*-a-ellos",
+      "corrected": "a–ellos",
+      "category": "placeholder_repair",
+      "reason": "Replace incomplete asterisk with the Spanish object pronoun supported by the source suffix and contextual referent.",
+      "evidence": {
+        "surface": "אֹתָ֛ם",
+        "sourceEnglish": "<obj.>/ them",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אֹתָ֛",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "HTo",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "ם",
+            "kind": "constituent",
+            "lemma": "Op3m",
+            "morphology": [
+              {
+                "code": "Sp3mp",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "them"
+          }
+        ],
+        "context": "The Levite males being counted in the immediately preceding census instruction.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.3.26#03",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֶת־",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֶת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.3.26#13",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֵת֙",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֵת֙",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.3.41#12",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֵת֙",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֵת֙",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.3.42#06",
+      "original": "*-a-él",
+      "corrected": "a–él",
+      "category": "placeholder_repair",
+      "reason": "Replace incomplete asterisk with the Spanish object pronoun supported by the source suffix and contextual referent.",
+      "evidence": {
+        "surface": "אֹת֑וֹ",
+        "sourceEnglish": "<obj.>/ him",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אֹת֑",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "HTo",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "וֹ",
+            "kind": "constituent",
+            "lemma": "Os3m",
+            "morphology": [
+              {
+                "code": "Sp3ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "him"
+          }
+        ],
+        "context": "Moses is the person whom Yahweh commanded in the subordinate clause.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.3.45#09",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֶת־",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֶת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.3.46#01",
+      "original": "Y–*",
+      "corrected": "Y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֵת֙",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֵת֙",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.7#11",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֶת־",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֶת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.7#13",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֶת־",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֶת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.7#15",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֵ֖ת",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֵ֖ת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.8#07",
+      "original": "*-a-él",
+      "corrected": "la",
+      "category": "placeholder_repair",
+      "reason": "Replace incomplete asterisk with the Spanish object pronoun supported by the source suffix and contextual referent.",
+      "evidence": {
+        "surface": "אֹת֔וֹ",
+        "sourceEnglish": "<obj.>/ it",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אֹת֔",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "HTo",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "וֹ",
+            "kind": "constituent",
+            "lemma": "Os3m",
+            "morphology": [
+              {
+                "code": "Sp3ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "it"
+          }
+        ],
+        "context": "The loaded table from 4:7 is covered and its poles inserted; Spanish mesa is feminine although Hebrew shulchan is masculine.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.9#08",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֶת־",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֶת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.9#10",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֶת־",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֶת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.9#12",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֶת־",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֶת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.9#14",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֵת֙",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֵת֙",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.10#02",
+      "original": "*-a-él",
+      "corrected": "lo",
+      "category": "placeholder_repair",
+      "reason": "Replace incomplete asterisk with the Spanish object pronoun supported by the source suffix and contextual referent.",
+      "evidence": {
+        "surface": "אֹתָהּ֙",
+        "sourceEnglish": "<obj.>/ it",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אֹתָ",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "HTo",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "הּ֙",
+            "kind": "constituent",
+            "lemma": "Os3f",
+            "morphology": [
+              {
+                "code": "Sp3fs",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "it"
+          }
+        ],
+        "context": "The lampstand from 4:9 is packed with its utensils; Spanish source uses masculine candelero although Hebrew menorah and this suffix are feminine.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.10#03",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֶת־",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֶת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.11#08",
+      "original": "*-a-él",
+      "corrected": "lo",
+      "category": "placeholder_repair",
+      "reason": "Replace incomplete asterisk with the Spanish object pronoun supported by the source suffix and contextual referent.",
+      "evidence": {
+        "surface": "אֹת֔וֹ",
+        "sourceEnglish": "<obj.>/ it",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אֹת֔",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "HTo",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "וֹ",
+            "kind": "constituent",
+            "lemma": "Os3m",
+            "morphology": [
+              {
+                "code": "Sp3ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "it"
+          }
+        ],
+        "context": "The gold altar is covered; Spanish altar is masculine.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.12#15",
+      "original": "*-a-ellos",
+      "corrected": "los",
+      "category": "placeholder_repair",
+      "reason": "Replace incomplete asterisk with the Spanish object pronoun supported by the source suffix and contextual referent.",
+      "evidence": {
+        "surface": "אוֹתָ֔ם",
+        "sourceEnglish": "<obj.>/ them",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אוֹתָ֔",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "HTo",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "ם",
+            "kind": "constituent",
+            "lemma": "Op3m",
+            "morphology": [
+              {
+                "code": "Sp3mp",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "them"
+          }
+        ],
+        "context": "The service utensils are covered; Spanish utensilios is masculine plural.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.14#14",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֶת־",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֶת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.14#16",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֶת־",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֶת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.15#07",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֶת־",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֶת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.19#15",
+      "original": "*-a-ellos",
+      "corrected": "a–ellos",
+      "category": "placeholder_repair",
+      "reason": "Replace incomplete asterisk with the Spanish object pronoun supported by the source suffix and contextual referent.",
+      "evidence": {
+        "surface": "אוֹתָ֗ם",
+        "sourceEnglish": "<obj.>/ them",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אוֹתָ֗",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "HTo",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "ם",
+            "kind": "constituent",
+            "lemma": "Op3m",
+            "morphology": [
+              {
+                "code": "Sp3mp",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "them"
+          }
+        ],
+        "context": "The Kohathite workers are assigned individually to service and burdens.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.23#10",
+      "original": "*-a-ellos",
+      "corrected": "a–ellos",
+      "category": "placeholder_repair",
+      "reason": "Replace incomplete asterisk with the Spanish object pronoun supported by the source suffix and contextual referent.",
+      "evidence": {
+        "surface": "אוֹתָ֑ם",
+        "sourceEnglish": "<obj.>/ them",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אוֹתָ֑",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "HTo",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "ם",
+            "kind": "constituent",
+            "lemma": "Op3m",
+            "morphology": [
+              {
+                "code": "Sp3mp",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "them"
+          }
+        ],
+        "context": "The Gershonite men aged thirty to fifty are counted.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.25#05",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֶת־",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֶת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.25#14",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֶ֨ת־",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֶ֨ת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.26#01",
+      "original": "Y–*",
+      "corrected": "Y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֵת֩",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֵת֩",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.26#04",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֶת־",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֶת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.26#15",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֵת֙",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֵת֙",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.26#17",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֶֽת־",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֶֽת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.26#21",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֵ֨ת",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֵ֨ת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.29#07",
+      "original": "*-a-ellos",
+      "corrected": "a–ellos",
+      "category": "placeholder_repair",
+      "reason": "Replace incomplete asterisk with the Spanish object pronoun supported by the source suffix and contextual referent.",
+      "evidence": {
+        "surface": "אֹתָֽם׃",
+        "sourceEnglish": "<obj.>/ them",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אֹתָֽ",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "HTo",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "ם",
+            "kind": "constituent",
+            "lemma": "Op3m",
+            "morphology": [
+              {
+                "code": "Sp3mp",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "them"
+          },
+          {
+            "surface": "׃",
+            "kind": "punctuation",
+            "lemma": "׃",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "The Merarite men are counted by clans and ancestral houses.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.49#05",
+      "original": "*-a-ellos",
+      "corrected": "a–ellos",
+      "category": "placeholder_repair",
+      "reason": "Replace incomplete asterisk with the Spanish object pronoun supported by the source suffix and contextual referent.",
+      "evidence": {
+        "surface": "אוֹתָם֙",
+        "sourceEnglish": "<obj.>/ them",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אוֹתָ",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "HTo",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "ם֙",
+            "kind": "constituent",
+            "lemma": "Op3m",
+            "morphology": [
+              {
+                "code": "Sp3mp",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "them"
+          }
+        ],
+        "context": "The Levite men are enrolled and assigned their service and burden.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.5.21#22",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֶת־",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֶת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.6.16#08",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֶת־",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֶת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.6.17#01",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֶת־",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֶת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.6.17#14",
+      "original": "y–*",
+      "corrected": "y",
+      "category": "placeholder_repair",
+      "reason": "Retain the conjunction; Hebrew direct-object marking has no separate lexical translation. Add Spanish personal a only in the explicitly inspected personal-object context.",
+      "evidence": {
+        "surface": "וְאֶת־",
+        "sourceEnglish": "and/ <obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "HC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "אֶת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "To",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Coordinates a direct object in this specific Numbers verse. The following explicit object remains represented by its own source token; do not invent a Spanish content word for the marker.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Jon.2.2(2.3)#02",
+      "original": "clame",
+      "corrected": "clamé",
+      "category": "orthography",
+      "reason": "Restore the Spanish written accent justified by the source person/tense or pronoun function.",
+      "evidence": {
+        "surface": "קָ֠רָאתִי",
+        "sourceEnglish": "I called",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "קָ֠רָאתִי",
+            "kind": "root",
+            "lemma": "קָרָא",
+            "morphology": [
+              {
+                "code": "HVqp1cs",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "I called"
+          }
+        ],
+        "context": "First-person singular past calling, HVqp1cs; independent TPL has Clamé.",
+        "referenceUrls": [
+          "https://git.door43.org/es-419_gl/es-419_glt/src/commit/3f9bf7e8806f2e310601d723eb201334fe3be1ab/32-JON.usfm",
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Jon.2.2(2.3)#04",
+      "original": "de–mi",
+      "corrected": "de–mí",
+      "category": "orthography",
+      "reason": "Restore the Spanish written accent justified by the source person/tense or pronoun function.",
+      "evidence": {
+        "surface": "לִ֛י",
+        "sourceEnglish": "of/ me",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "לִ֛",
+            "kind": "constituent",
+            "lemma": "ל",
+            "morphology": [
+              {
+                "code": "HRd",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "of"
+          },
+          {
+            "surface": "י",
+            "kind": "root",
+            "lemma": "Os1c",
+            "morphology": [
+              {
+                "code": "Sp1bs",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "me"
+          }
+        ],
+        "context": "Preposition plus first-person object pronoun, not a possessive determiner.",
+        "referenceUrls": [
+          "https://git.door43.org/es-419_gl/es-419_glt/src/commit/3f9bf7e8806f2e310601d723eb201334fe3be1ab/32-JON.usfm",
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Jon.2.2(2.3)#07",
+      "original": "y–me–respondio",
+      "corrected": "y–me–respondió",
+      "category": "orthography",
+      "reason": "Restore the Spanish written accent justified by the source person/tense or pronoun function.",
+      "evidence": {
+        "surface": "וַֽיַּעֲנֵ֑נִי",
+        "sourceEnglish": "and/ he answered/ me",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וַֽ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "Hc",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "יַּעֲנֵ֑",
+            "kind": "root",
+            "lemma": "עָנָה",
+            "morphology": [
+              {
+                "code": "Vqw3ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "he answered"
+          },
+          {
+            "surface": "נִי",
+            "kind": "constituent",
+            "lemma": "Os1c",
+            "morphology": [
+              {
+                "code": "Sp1bs",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "me"
+          }
+        ],
+        "context": "Third-person singular past answer with first-person object suffix.",
+        "referenceUrls": [
+          "https://git.door43.org/es-419_gl/es-419_glt/src/commit/3f9bf7e8806f2e310601d723eb201334fe3be1ab/32-JON.usfm",
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Jon.2.2(2.3)#10",
+      "original": "pedi–auxilio",
+      "corrected": "pedí–auxilio",
+      "category": "orthography",
+      "reason": "Restore the Spanish written accent justified by the source person/tense or pronoun function.",
+      "evidence": {
+        "surface": "שִׁוַּ֖עְתִּי",
+        "sourceEnglish": "I cried for help",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "שִׁוַּ֖עְתִּי",
+            "kind": "root",
+            "lemma": "שָׁוַע",
+            "morphology": [
+              {
+                "code": "HVpp1cs",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "I cried for help"
+          }
+        ],
+        "context": "First-person singular completed cry for help, HVpp1cs.",
+        "referenceUrls": [
+          "https://git.door43.org/es-419_gl/es-419_glt/src/commit/3f9bf7e8806f2e310601d723eb201334fe3be1ab/32-JON.usfm",
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Jon.2.2(2.3)#11",
+      "original": "oiste",
+      "corrected": "oíste",
+      "category": "orthography",
+      "reason": "Restore the Spanish written accent justified by the source person/tense or pronoun function.",
+      "evidence": {
+        "surface": "שָׁמַ֥עְתָּ",
+        "sourceEnglish": "you heard",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "שָׁמַ֥עְתָּ",
+            "kind": "root",
+            "lemma": "שָׁמַע",
+            "morphology": [
+              {
+                "code": "HVqp2ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "you heard"
+          }
+        ],
+        "context": "Second-person singular completed hearing, HVqp2ms; accented hiatus in Spanish.",
+        "referenceUrls": [
+          "https://git.door43.org/es-419_gl/es-419_glt/src/commit/3f9bf7e8806f2e310601d723eb201334fe3be1ab/32-JON.usfm",
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Deu.4.33#09",
+      "original": "oiste",
+      "corrected": "oíste",
+      "category": "orthography",
+      "reason": "Restore the Spanish written accent justified by the source person/tense or pronoun function.",
+      "evidence": {
+        "surface": "שָׁמַ֥עְתָּ",
+        "sourceEnglish": "you have heard",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "שָׁמַ֥עְתָּ",
+            "kind": "root",
+            "lemma": "שָׁמַע",
+            "morphology": [
+              {
+                "code": "HVqp2ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "you have heard"
+          }
+        ],
+        "context": "Second-person singular completed hearing, HVqp2ms; inspected exact recurring form.",
+        "referenceUrls": [
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Deu.4.36#14",
+      "original": "oiste",
+      "corrected": "oíste",
+      "category": "orthography",
+      "reason": "Restore the Spanish written accent justified by the source person/tense or pronoun function.",
+      "evidence": {
+        "surface": "שָׁמַ֖עְתָּ",
+        "sourceEnglish": "you heard",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "שָׁמַ֖עְתָּ",
+            "kind": "root",
+            "lemma": "שָׁמַע",
+            "morphology": [
+              {
+                "code": "HVqp2ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "you heard"
+          }
+        ],
+        "context": "Second-person singular completed hearing, HVqp2ms; inspected same parsed form with different cantillation.",
+        "referenceUrls": [
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Jon.2.1(2.2)#01",
+      "original": "Y–oro",
+      "corrected": "Y–oró",
+      "category": "orthography",
+      "reason": "Restore the Spanish written accent justified by the source person/tense or pronoun function.",
+      "evidence": {
+        "surface": "וַיִּתְפַּלֵּ֣ל",
+        "sourceEnglish": "and/ he prayed",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וַ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "Hc",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "יִּתְפַּלֵּ֣ל",
+            "kind": "root",
+            "lemma": "פָּלַל",
+            "morphology": [
+              {
+                "code": "Vtw3ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "he prayed"
+          }
+        ],
+        "context": "Narrative third-person singular prayer, Vtw3ms; not first-person present oro or the noun gold.",
+        "referenceUrls": [
+          "https://git.door43.org/es-419_gl/es-419_glt/src/commit/3f9bf7e8806f2e310601d723eb201334fe3be1ab/32-JON.usfm",
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Jon.4.2#01",
+      "original": "Y–oro",
+      "corrected": "Y–oró",
+      "category": "orthography",
+      "reason": "Restore the Spanish written accent justified by the source person/tense or pronoun function.",
+      "evidence": {
+        "surface": "וַיִּתְפַּלֵּ֨ל",
+        "sourceEnglish": "and/ he prayed",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וַ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "Hc",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "יִּתְפַּלֵּ֨ל",
+            "kind": "root",
+            "lemma": "פָּלַל",
+            "morphology": [
+              {
+                "code": "Vtw3ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "he prayed"
+          }
+        ],
+        "context": "Narrative third-person singular prayer, Vtw3ms; independent TPL has él oró.",
+        "referenceUrls": [
+          "https://git.door43.org/es-419_gl/es-419_glt/src/commit/3f9bf7e8806f2e310601d723eb201334fe3be1ab/32-JON.usfm",
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Jon.4.2#16",
+      "original": "me–adelante",
+      "corrected": "me–adelanté",
+      "category": "orthography",
+      "reason": "Restore the Spanish written accent justified by the source person/tense or pronoun function.",
+      "evidence": {
+        "surface": "קִדַּ֖מְתִּי",
+        "sourceEnglish": "I did [the] first time",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "קִדַּ֖מְתִּי",
+            "kind": "root",
+            "lemma": "קָדַם",
+            "morphology": [
+              {
+                "code": "HVpp1cs",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "I did [the] first time"
+          }
+        ],
+        "context": "First-person singular completed action, HVpp1cs, not present subjunctive.",
+        "referenceUrls": [
+          "https://git.door43.org/es-419_gl/es-419_glt/src/commit/3f9bf7e8806f2e310601d723eb201334fe3be1ab/32-JON.usfm",
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Jon.4.3#07",
+      "original": "de–mi",
+      "corrected": "de–mí",
+      "category": "orthography",
+      "reason": "Restore the Spanish written accent justified by the source person/tense or pronoun function.",
+      "evidence": {
+        "surface": "מִמֶּ֑נִּי",
+        "sourceEnglish": "from/ me",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "מִמֶּ֑",
+            "kind": "root",
+            "lemma": "מִן־",
+            "morphology": [
+              {
+                "code": "HRd",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "from"
+          },
+          {
+            "surface": "נִּי",
+            "kind": "constituent",
+            "lemma": "Os1c",
+            "morphology": [
+              {
+                "code": "Sp1bs",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "me"
+          }
+        ],
+        "context": "Preposition plus first-person personal pronoun in the request to take life from me.",
+        "referenceUrls": [
+          "https://git.door43.org/es-419_gl/es-419_glt/src/commit/3f9bf7e8806f2e310601d723eb201334fe3be1ab/32-JON.usfm",
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Psa.76.4(76.5)#02",
+      "original": "tu",
+      "corrected": "tú",
+      "category": "orthography",
+      "reason": "Distinguish the tonic personal pronoun tú from the possessive determiner tu.",
+      "evidence": {
+        "surface": "אַתָּ֥ה",
+        "sourceEnglish": "you",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אַתָּ֥ה",
+            "kind": "root",
+            "lemma": "אַתָּ֫ה",
+            "morphology": [
+              {
+                "code": "HPp2ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "you"
+          }
+        ],
+        "context": "Hebrew independent second-person masculine singular personal pronoun; source HPp2ms and English you. Each listed occurrence was inspected; this is not a corpus-wide replacement.",
+        "referenceUrls": [
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Psa.76.7(76.8)#03",
+      "original": "tu",
+      "corrected": "tú",
+      "category": "orthography",
+      "reason": "Distinguish the tonic personal pronoun tú from the possessive determiner tu.",
+      "evidence": {
+        "surface": "אַ֗תָּה",
+        "sourceEnglish": "you",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אַ֗תָּה",
+            "kind": "root",
+            "lemma": "אַתָּ֫ה",
+            "morphology": [
+              {
+                "code": "HPp2ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "you"
+          }
+        ],
+        "context": "Hebrew independent second-person masculine singular personal pronoun; source HPp2ms and English you. Each listed occurrence was inspected; this is not a corpus-wide replacement.",
+        "referenceUrls": [
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Psa.82.8#06",
+      "original": "tu",
+      "corrected": "tú",
+      "category": "orthography",
+      "reason": "Distinguish the tonic personal pronoun tú from the possessive determiner tu.",
+      "evidence": {
+        "surface": "אַתָּ֥ה",
+        "sourceEnglish": "you",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אַתָּ֥ה",
+            "kind": "root",
+            "lemma": "אַתָּ֫ה",
+            "morphology": [
+              {
+                "code": "HPp2ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "you"
+          }
+        ],
+        "context": "Hebrew independent second-person masculine singular personal pronoun; source HPp2ms and English you. Each listed occurrence was inspected; this is not a corpus-wide replacement.",
+        "referenceUrls": [
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Psa.83.18(83.19)#03",
+      "original": "tu",
+      "corrected": "tú",
+      "category": "orthography",
+      "reason": "Distinguish the tonic personal pronoun tú from the possessive determiner tu.",
+      "evidence": {
+        "surface": "אַתָּ֬ה",
+        "sourceEnglish": "you",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אַתָּ֬ה",
+            "kind": "root",
+            "lemma": "אַתָּ֫ה",
+            "morphology": [
+              {
+                "code": "HPp2ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "you"
+          }
+        ],
+        "context": "Hebrew independent second-person masculine singular personal pronoun; source HPp2ms and English you. Each listed occurrence was inspected; this is not a corpus-wide replacement.",
+        "referenceUrls": [
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Psa.85.6(85.7)#02",
+      "original": "tu",
+      "corrected": "tú",
+      "category": "orthography",
+      "reason": "Distinguish the tonic personal pronoun tú from the possessive determiner tu.",
+      "evidence": {
+        "surface": "אַ֭תָּה",
+        "sourceEnglish": "you",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אַ֭תָּה",
+            "kind": "root",
+            "lemma": "אַתָּ֫ה",
+            "morphology": [
+              {
+                "code": "HPp2ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "you"
+          }
+        ],
+        "context": "Hebrew independent second-person masculine singular personal pronoun; source HPp2ms and English you. Each listed occurrence was inspected; this is not a corpus-wide replacement.",
+        "referenceUrls": [
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Psa.86.2#08",
+      "original": "tu",
+      "corrected": "tú",
+      "category": "orthography",
+      "reason": "Distinguish the tonic personal pronoun tú from the possessive determiner tu.",
+      "evidence": {
+        "surface": "אַתָּ֣ה",
+        "sourceEnglish": "you",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אַתָּ֣ה",
+            "kind": "root",
+            "lemma": "אַתָּ֫ה",
+            "morphology": [
+              {
+                "code": "HPp2ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "you"
+          }
+        ],
+        "context": "Hebrew independent second-person masculine singular personal pronoun; source HPp2ms and English you. Each listed occurrence was inspected; this is not a corpus-wide replacement.",
+        "referenceUrls": [
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Psa.86.5#02",
+      "original": "tu",
+      "corrected": "tú",
+      "category": "orthography",
+      "reason": "Distinguish the tonic personal pronoun tú from the possessive determiner tu.",
+      "evidence": {
+        "surface": "אַתָּ֣ה",
+        "sourceEnglish": "you",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אַתָּ֣ה",
+            "kind": "root",
+            "lemma": "אַתָּ֫ה",
+            "morphology": [
+              {
+                "code": "HPp2ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "you"
+          }
+        ],
+        "context": "Hebrew independent second-person masculine singular personal pronoun; source HPp2ms and English you. Each listed occurrence was inspected; this is not a corpus-wide replacement.",
+        "referenceUrls": [
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Psa.86.10#03",
+      "original": "tu",
+      "corrected": "tú",
+      "category": "orthography",
+      "reason": "Distinguish the tonic personal pronoun tú from the possessive determiner tu.",
+      "evidence": {
+        "surface": "אַ֭תָּה",
+        "sourceEnglish": "you",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אַ֭תָּה",
+            "kind": "root",
+            "lemma": "אַתָּ֫ה",
+            "morphology": [
+              {
+                "code": "HPp2ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "you"
+          }
+        ],
+        "context": "Hebrew independent second-person masculine singular personal pronoun; source HPp2ms and English you. Each listed occurrence was inspected; this is not a corpus-wide replacement.",
+        "referenceUrls": [
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Psa.86.10#06",
+      "original": "tu",
+      "corrected": "tú",
+      "category": "orthography",
+      "reason": "Distinguish the tonic personal pronoun tú from the possessive determiner tu.",
+      "evidence": {
+        "surface": "אַתָּ֖ה",
+        "sourceEnglish": "you",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אַתָּ֖ה",
+            "kind": "root",
+            "lemma": "אַתָּ֫ה",
+            "morphology": [
+              {
+                "code": "HPp2ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "you"
+          }
+        ],
+        "context": "Hebrew independent second-person masculine singular personal pronoun; source HPp2ms and English you. Each listed occurrence was inspected; this is not a corpus-wide replacement.",
+        "referenceUrls": [
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Psa.86.17#09",
+      "original": "tu",
+      "corrected": "tú",
+      "category": "orthography",
+      "reason": "Distinguish the tonic personal pronoun tú from the possessive determiner tu.",
+      "evidence": {
+        "surface": "אַתָּ֥ה",
+        "sourceEnglish": "you",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אַתָּ֥ה",
+            "kind": "root",
+            "lemma": "אַתָּ֫ה",
+            "morphology": [
+              {
+                "code": "HPp2ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "you"
+          }
+        ],
+        "context": "Hebrew independent second-person masculine singular personal pronoun; source HPp2ms and English you. Each listed occurrence was inspected; this is not a corpus-wide replacement.",
+        "referenceUrls": [
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Psa.89.9(89.10)#07",
+      "original": "tu",
+      "corrected": "tú",
+      "category": "orthography",
+      "reason": "Distinguish the tonic personal pronoun tú from the possessive determiner tu.",
+      "evidence": {
+        "surface": "אַתָּ֥ה",
+        "sourceEnglish": "you",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אַתָּ֥ה",
+            "kind": "root",
+            "lemma": "אַתָּ֫ה",
+            "morphology": [
+              {
+                "code": "HPp2ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "you"
+          }
+        ],
+        "context": "Hebrew independent second-person masculine singular personal pronoun; source HPp2ms and English you. Each listed occurrence was inspected; this is not a corpus-wide replacement.",
+        "referenceUrls": [
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Psa.89.11(89.12)#08",
+      "original": "tu",
+      "corrected": "tú",
+      "category": "orthography",
+      "reason": "Distinguish the tonic personal pronoun tú from the possessive determiner tu.",
+      "evidence": {
+        "surface": "אַתָּ֥ה",
+        "sourceEnglish": "you",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אַתָּ֥ה",
+            "kind": "root",
+            "lemma": "אַתָּ֫ה",
+            "morphology": [
+              {
+                "code": "HPp2ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "you"
+          }
+        ],
+        "context": "Hebrew independent second-person masculine singular personal pronoun; source HPp2ms and English you. Each listed occurrence was inspected; this is not a corpus-wide replacement.",
+        "referenceUrls": [
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Psa.89.12(89.13)#03",
+      "original": "tu",
+      "corrected": "tú",
+      "category": "orthography",
+      "reason": "Distinguish the tonic personal pronoun tú from the possessive determiner tu.",
+      "evidence": {
+        "surface": "אַתָּ֣ה",
+        "sourceEnglish": "you",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אַתָּ֣ה",
+            "kind": "root",
+            "lemma": "אַתָּ֫ה",
+            "morphology": [
+              {
+                "code": "HPp2ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "you"
+          }
+        ],
+        "context": "Hebrew independent second-person masculine singular personal pronoun; source HPp2ms and English you. Each listed occurrence was inspected; this is not a corpus-wide replacement.",
+        "referenceUrls": [
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Psa.89.26(89.27)#04",
+      "original": "tu",
+      "corrected": "tú",
+      "category": "orthography",
+      "reason": "Distinguish the tonic personal pronoun tú from the possessive determiner tu.",
+      "evidence": {
+        "surface": "אָ֑תָּה",
+        "sourceEnglish": "you",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אָ֑תָּה",
+            "kind": "root",
+            "lemma": "אַתָּ֫ה",
+            "morphology": [
+              {
+                "code": "HPp2ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "you"
+          }
+        ],
+        "context": "Hebrew independent second-person masculine singular personal pronoun; source HPp2ms and English you. Each listed occurrence was inspected; this is not a corpus-wide replacement.",
+        "referenceUrls": [
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Psa.90.1#07",
+      "original": "tu",
+      "corrected": "tú",
+      "category": "orthography",
+      "reason": "Distinguish the tonic personal pronoun tú from the possessive determiner tu.",
+      "evidence": {
+        "surface": "אַ֭תָּה",
+        "sourceEnglish": "you",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אַ֭תָּה",
+            "kind": "root",
+            "lemma": "אַתָּ֫ה",
+            "morphology": [
+              {
+                "code": "HPp2ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "you"
+          }
+        ],
+        "context": "Hebrew independent second-person masculine singular personal pronoun; source HPp2ms and English you. Each listed occurrence was inspected; this is not a corpus-wide replacement.",
+        "referenceUrls": [
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Psa.90.2#10",
+      "original": "tu",
+      "corrected": "tú",
+      "category": "orthography",
+      "reason": "Distinguish the tonic personal pronoun tú from the possessive determiner tu.",
+      "evidence": {
+        "surface": "אַתָּ֥ה",
+        "sourceEnglish": "you",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אַתָּ֥ה",
+            "kind": "root",
+            "lemma": "אַתָּ֫ה",
+            "morphology": [
+              {
+                "code": "HPp2ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "you"
+          }
+        ],
+        "context": "Hebrew independent second-person masculine singular personal pronoun; source HPp2ms and English you. Each listed occurrence was inspected; this is not a corpus-wide replacement.",
+        "referenceUrls": [
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Jon.1.8#20",
+      "original": "tu",
+      "corrected": "tú",
+      "category": "orthography",
+      "reason": "Distinguish the tonic personal pronoun tú from the possessive determiner tu.",
+      "evidence": {
+        "surface": "אָֽתָּה׃",
+        "sourceEnglish": "[are] you",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אָֽתָּה",
+            "kind": "root",
+            "lemma": "אַתָּ֫ה",
+            "morphology": [
+              {
+                "code": "HPp2ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "[are] you"
+          },
+          {
+            "surface": "׃",
+            "kind": "punctuation",
+            "lemma": "׃",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Hebrew independent second-person masculine singular personal pronoun; source HPp2ms and English you. Each listed occurrence was inspected; this is not a corpus-wide replacement.",
+        "referenceUrls": [
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Jon.1.14#19",
+      "original": "tu",
+      "corrected": "tú",
+      "category": "orthography",
+      "reason": "Distinguish the tonic personal pronoun tú from the possessive determiner tu.",
+      "evidence": {
+        "surface": "אַתָּ֣ה",
+        "sourceEnglish": "you",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אַתָּ֣ה",
+            "kind": "root",
+            "lemma": "אַתָּ֫ה",
+            "morphology": [
+              {
+                "code": "HPp2ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "you"
+          }
+        ],
+        "context": "Hebrew independent second-person masculine singular personal pronoun; source HPp2ms and English you. Each listed occurrence was inspected; this is not a corpus-wide replacement.",
+        "referenceUrls": [
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Jon.4.2#22",
+      "original": "tu",
+      "corrected": "tú",
+      "category": "orthography",
+      "reason": "Distinguish the tonic personal pronoun tú from the possessive determiner tu.",
+      "evidence": {
+        "surface": "אַתָּה֙",
+        "sourceEnglish": "you",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אַתָּה֙",
+            "kind": "root",
+            "lemma": "אַתָּ֫ה",
+            "morphology": [
+              {
+                "code": "HPp2ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "you"
+          }
+        ],
+        "context": "Hebrew independent second-person masculine singular personal pronoun; source HPp2ms and English you. Each listed occurrence was inspected; this is not a corpus-wide replacement.",
+        "referenceUrls": [
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Jon.4.10#03",
+      "original": "tu",
+      "corrected": "tú",
+      "category": "orthography",
+      "reason": "Distinguish the tonic personal pronoun tú from the possessive determiner tu.",
+      "evidence": {
+        "surface": "אַתָּ֥ה",
+        "sourceEnglish": "you",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אַתָּ֥ה",
+            "kind": "root",
+            "lemma": "אַתָּ֫ה",
+            "morphology": [
+              {
+                "code": "HPp2ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "you"
+          }
+        ],
+        "context": "Hebrew independent second-person masculine singular personal pronoun; source HPp2ms and English you. Each listed occurrence was inspected; this is not a corpus-wide replacement.",
+        "referenceUrls": [
+          "https://www.rae.es/dpd/tilde"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Psa.48.11(48.12)#04",
+      "original": "go­cense",
+      "corrected": "gócense",
+      "category": "orthography",
+      "reason": "Remove embedded soft hyphen and restore the esdrújula accent in the existing Spanish exhortation.",
+      "evidence": {
+        "surface": "תָּ֭גֵלְנָה",
+        "sourceEnglish": "they will be glad",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "תָּ֭גֵלְנָה",
+            "kind": "root",
+            "lemma": "גִּיל",
+            "morphology": [
+              {
+                "code": "HVqi3fp",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "they will be glad"
+          }
+        ],
+        "context": "Hebrew third-person feminine plural rejoicing, HVqi3fp, with daughters of Judah as subject. Preserve the upstream exhortative reading, correcting only its spelling.",
+        "referenceUrls": [
+          "https://www.rae.es/dpd/tilde",
+          "https://dle.rae.es/gozar"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Jos.1.8#20",
+      "original": "tu",
+      "corrected": "[objeto]",
+      "category": "function_marker",
+      "reason": "Correct a possessive-looking gloss attached to a pure direct-object marker.",
+      "evidence": {
+        "surface": "אֶת־",
+        "sourceEnglish": "<obj.>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אֶת",
+            "kind": "root",
+            "lemma": "אֵת",
+            "morphology": [
+              {
+                "code": "HTo",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "<obj.>"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Source אֶת־ has HTo and English <obj.>; the following דְּרָכֶךָ token itself supplies your ways. The source UI can display its grammatical marker rather than claiming tu means this word.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Num.4.8#05",
+      "original": "escarlatain",
+      "corrected": "escarlata",
+      "category": "orthography",
+      "reason": "Remove an extraneous suffix in a malformed Spanish color word.",
+      "evidence": {
+        "surface": "שָׁנִ֔י",
+        "sourceEnglish": "scarlet",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "שָׁנִ֔י",
+            "kind": "root",
+            "lemma": "שָׁנִי",
+            "morphology": [
+              {
+                "code": "HNcmsa",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "scarlet"
+          }
+        ],
+        "context": "Source שָׁנִי and STEP scarlet in the scarlet textile phrase. The extra in has no source morphological constituent.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Exo.3.14#05",
+      "original": "Ehyeh",
+      "corrected": "Yo–soy / Yo–seré",
+      "category": "explanatory_meaning",
+      "reason": "Supply Spanish meaning in place of bare transliteration while preserving the present/future interpretive alternatives.",
+      "evidence": {
+        "surface": "אֶֽהְיֶ֖ה",
+        "sourceEnglish": "I am",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אֶֽהְיֶ֖ה",
+            "kind": "root",
+            "lemma": "הָיָה",
+            "morphology": [
+              {
+                "code": "HVqi1cs",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "I am"
+          }
+        ],
+        "context": "Qal imperfect first-person common singular of היה, HVqi1cs. The slash lists alternative contextual renderings, not two simultaneous predicates or a theological resolution.",
+        "referenceUrls": [
+          "https://classic.net.bible.org/passage.php?passage=ex+3%3A14",
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Exo.3.14#07",
+      "original": "Ehyeh",
+      "corrected": "Yo–soy / Yo–seré",
+      "category": "explanatory_meaning",
+      "reason": "Supply Spanish meaning in place of bare transliteration while preserving the present/future interpretive alternatives.",
+      "evidence": {
+        "surface": "אֶֽהְיֶ֑ה",
+        "sourceEnglish": "I am",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אֶֽהְיֶ֑ה",
+            "kind": "root",
+            "lemma": "הָיָה",
+            "morphology": [
+              {
+                "code": "HVqi1cs",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "I am"
+          }
+        ],
+        "context": "Qal imperfect first-person common singular of היה, HVqi1cs. The slash lists alternative contextual renderings, not two simultaneous predicates or a theological resolution.",
+        "referenceUrls": [
+          "https://classic.net.bible.org/passage.php?passage=ex+3%3A14",
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Exo.3.14#13",
+      "original": "Ehyeh",
+      "corrected": "Yo–soy / Yo–seré",
+      "category": "explanatory_meaning",
+      "reason": "Supply Spanish meaning in place of bare transliteration while preserving the present/future interpretive alternatives.",
+      "evidence": {
+        "surface": "אֶֽהְיֶ֖ה",
+        "sourceEnglish": "I am",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אֶֽהְיֶ֖ה",
+            "kind": "root",
+            "lemma": "הָיָה",
+            "morphology": [
+              {
+                "code": "HVqi1cs",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "I am"
+          }
+        ],
+        "context": "Qal imperfect first-person common singular of היה, HVqi1cs. The slash lists alternative contextual renderings, not two simultaneous predicates or a theological resolution.",
+        "referenceUrls": [
+          "https://classic.net.bible.org/passage.php?passage=ex+3%3A14",
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Rut.2.12#07",
+      "original": "de–con",
+      "corrected": "de–parte–de",
+      "category": "contextual_wording",
+      "reason": "Correct the inspected contextual meaning or grammatical function, retaining the original occurrence and source evidence.",
+      "evidence": {
+        "surface": "מֵעִ֤ם",
+        "sourceEnglish": "from/ with",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "מֵ",
+            "kind": "constituent",
+            "lemma": "מ",
+            "morphology": [
+              {
+                "code": "HR",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "from"
+          },
+          {
+            "surface": "עִ֤ם",
+            "kind": "root",
+            "lemma": "מֵעִם",
+            "morphology": [
+              {
+                "code": "R",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "with"
+          }
+        ],
+        "context": "The compound preposition מֵעִם marks the source of reward from Yahweh; de parte de conveys this relation without the malformed de con. Independent TPL uses de Jehová.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:2Sa.7.16#01",
+      "original": "Y–será–fiel",
+      "corrected": "Y–quedará–firme",
+      "category": "contextual_wording",
+      "reason": "Correct the inspected contextual meaning or grammatical function, retaining the original occurrence and source evidence.",
+      "evidence": {
+        "surface": "וְנֶאְמַ֨ן",
+        "sourceEnglish": "and/ it will be established",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "Hc",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "נֶאְמַ֨ן",
+            "kind": "root",
+            "lemma": "אָמַן",
+            "morphology": [
+              {
+                "code": "VNq3ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "it will be established"
+          }
+        ],
+        "context": "Niphal of אמן describes the enduring establishment of the house/kingdom, confirmed by STEP will be established and the parallel established throne, not personal faithfulness.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:1Ki.8.27#13",
+      "original": "cuánto–menos",
+      "corrected": "cuánto",
+      "category": "contextual_wording",
+      "reason": "Correct the inspected contextual meaning or grammatical function, retaining the original occurrence and source evidence.",
+      "evidence": {
+        "surface": "אַ֕ף",
+        "sourceEnglish": "indeed?",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אַ֕ף",
+            "kind": "root",
+            "lemma": "אַף",
+            "morphology": [
+              {
+                "code": "HTj",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "indeed?"
+          }
+        ],
+        "context": "With the immediately following כי, אף כי introduces the lesser-case contrast after heavens cannot contain you. This paired contextual rendering distributes cuánto menos without appending a spurious causal porque.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ],
+        "relatedOccurrences": [
+          "TAHOT:1Ki.8.27#13",
+          "TAHOT:1Ki.8.27#14"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:1Ki.8.27#14",
+      "original": "porque",
+      "corrected": "menos",
+      "category": "contextual_wording",
+      "reason": "Correct the inspected contextual meaning or grammatical function, retaining the original occurrence and source evidence.",
+      "evidence": {
+        "surface": "כִּֽי־",
+        "sourceEnglish": "for",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "כִּֽי",
+            "kind": "root",
+            "lemma": "כִּי",
+            "morphology": [
+              {
+                "code": "HTc",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "for"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Second member of the inspected אף כי contrast with the temple, paired with preceding cuánto. This is construction-specific, not a general lexical replacement for כי.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ],
+        "relatedOccurrences": [
+          "TAHOT:1Ki.8.27#13",
+          "TAHOT:1Ki.8.27#14"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Ezr.4.24#08",
+      "original": "y–fue",
+      "corrected": "y–permaneció",
+      "category": "contextual_wording",
+      "reason": "Correct the inspected contextual meaning or grammatical function, retaining the original occurrence and source evidence.",
+      "evidence": {
+        "surface": "וַהֲוָת֙",
+        "sourceEnglish": "and/ it was",
+        "language": "arc",
+        "segments": [
+          {
+            "surface": "וַ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "AC",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "הֲוָת֙",
+            "kind": "root",
+            "lemma": "הֲוָא",
+            "morphology": [
+              {
+                "code": "Vqp3fs",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "it was"
+          }
+        ],
+        "context": "Aramaic הוה plus the following feminine participle describes the work remaining stopped until the second year; preserve aspect and feminine work subject.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ],
+        "relatedOccurrences": [
+          "TAHOT:Ezr.4.24#08",
+          "TAHOT:Ezr.4.24#09"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Ezr.4.24#09",
+      "original": "cesada",
+      "corrected": "suspendida",
+      "category": "contextual_wording",
+      "reason": "Correct the inspected contextual meaning or grammatical function, retaining the original occurrence and source evidence.",
+      "evidence": {
+        "surface": "בָּֽטְלָ֔א",
+        "sourceEnglish": "ceasing",
+        "language": "arc",
+        "segments": [
+          {
+            "surface": "בָּֽטְלָ֔א",
+            "kind": "root",
+            "lemma": "בְּטֵל",
+            "morphology": [
+              {
+                "code": "AVqrfsa",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "ceasing"
+          }
+        ],
+        "context": "Aramaic בטל participle describes stopped work; suspendida expresses the state of obra without inventing a passive agent.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ],
+        "relatedOccurrences": [
+          "TAHOT:Ezr.4.24#08",
+          "TAHOT:Ezr.4.24#09"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Est.4.14#03",
+      "original": "callar",
+      "corrected": "por–completo",
+      "category": "contextual_wording",
+      "reason": "Correct the inspected contextual meaning or grammatical function, retaining the original occurrence and source evidence.",
+      "evidence": {
+        "surface": "הַחֲרֵ֣שׁ",
+        "sourceEnglish": "certainly <to keep quiet>",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "הַחֲרֵ֣שׁ",
+            "kind": "root",
+            "lemma": "חָרֵשׁ",
+            "morphology": [
+              {
+                "code": "HVhaa",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "certainly <to keep quiet>"
+          }
+        ],
+        "context": "The Hebrew infinitive absolute reinforces the following same-root finite verb. Render its emphatic function, retained explicitly, instead of a Spanish infinitive incorrectly stranded before callares.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ],
+        "relatedOccurrences": [
+          "TAHOT:Est.4.14#03",
+          "TAHOT:Est.4.14#04"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Est.4.14#04",
+      "original": "callares",
+      "corrected": "callas",
+      "category": "contextual_wording",
+      "reason": "Correct the inspected contextual meaning or grammatical function, retaining the original occurrence and source evidence.",
+      "evidence": {
+        "surface": "תַּחֲרִישִׁי֮",
+        "sourceEnglish": "you will keep quiet",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "תַּחֲרִישִׁי֮",
+            "kind": "root",
+            "lemma": "חָרֵשׁ",
+            "morphology": [
+              {
+                "code": "HVhi2fs",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "you will keep quiet"
+          }
+        ],
+        "context": "Second-person feminine singular imperfect in the conditional silence clause. Modern Spanish si ... callas preserves that condition; emphasis remains in preceding por completo.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ],
+        "relatedOccurrences": [
+          "TAHOT:Est.4.14#03",
+          "TAHOT:Est.4.14#04"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Ecc.3.1#01",
+      "original": "Para–el–todo",
+      "corrected": "Para–todo",
+      "category": "contextual_wording",
+      "reason": "Correct the inspected contextual meaning or grammatical function, retaining the original occurrence and source evidence.",
+      "evidence": {
+        "surface": "לַכֹּ֖ל",
+        "sourceEnglish": "for <the>/ everything",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "לַ",
+            "kind": "constituent",
+            "lemma": "ל",
+            "morphology": [
+              {
+                "code": "HRd",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "for <the>"
+          },
+          {
+            "surface": "כֹּ֖ל",
+            "kind": "root",
+            "lemma": "כֹּל",
+            "morphology": [
+              {
+                "code": "Ncmsa",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "everything"
+          }
+        ],
+        "context": "Preposition plus totalizing כל: for everything, as in STEP. Spanish para todo conveys the general scope without suggesting a philosophical noun el Todo.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Jer.31.31#06",
+      "original": "y–cortaré",
+      "corrected": "y–estableceré",
+      "category": "contextual_wording",
+      "reason": "Correct the inspected contextual meaning or grammatical function, retaining the original occurrence and source evidence.",
+      "evidence": {
+        "surface": "וְכָרַתִּ֗י",
+        "sourceEnglish": "and/ I will make",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "וְ",
+            "kind": "constituent",
+            "lemma": "ו",
+            "morphology": [
+              {
+                "code": "Hc",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "and"
+          },
+          {
+            "surface": "כָרַתִּ֗י",
+            "kind": "root",
+            "lemma": "כָּרַת",
+            "morphology": [
+              {
+                "code": "Vqq1cs",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "I will make"
+          }
+        ],
+        "context": "כרת with ברית is the covenant-making construction; STEP contextual meaning is and I will make. Estableceré preserves the action of instituting the covenant without implying physically cutting the covenant.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Dan.2.20#05",
+      "original": "el–nombre–de",
+      "corrected": "su–nombre",
+      "category": "contextual_wording",
+      "reason": "Correct the inspected contextual meaning or grammatical function, retaining the original occurrence and source evidence.",
+      "evidence": {
+        "surface": "שְׁמֵ֤הּ",
+        "sourceEnglish": "name/ his",
+        "language": "arc",
+        "segments": [
+          {
+            "surface": "שְׁמֵ֤",
+            "kind": "root",
+            "lemma": "שֻׁם",
+            "morphology": [
+              {
+                "code": "ANcbsc",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "name"
+          },
+          {
+            "surface": "הּ",
+            "kind": "constituent",
+            "lemma": "Ps3m",
+            "morphology": [
+              {
+                "code": "Sp3ms",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "his"
+          }
+        ],
+        "context": "Aramaic שמה contains an explicit third-person possessive suffix. Su nombre represents that suffix; the following די אלהא identifies the possessor. Preserve this source construction even though concatenated Spanish may be redundant.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Mic.6.8#10",
+      "original": "sino",
+      "corrected": "más",
+      "category": "contextual_wording",
+      "reason": "Correct the inspected contextual meaning or grammatical function, retaining the original occurrence and source evidence.",
+      "evidence": {
+        "surface": "כִּ֣י",
+        "sourceEnglish": "that",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "כִּ֣י",
+            "kind": "root",
+            "lemma": "כִּי [אם]",
+            "morphology": [
+              {
+                "code": "HTc",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "that"
+          }
+        ],
+        "context": "The paired כי אם construction limits what is required. In the interrogative context, más que expresses this restriction; applied only together with the next explicit occurrence.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ],
+        "relatedOccurrences": [
+          "TAHOT:Mic.6.8#10",
+          "TAHOT:Mic.6.8#11"
+        ]
+      }
+    },
+    {
+      "occurrenceId": "TAHOT:Mic.6.8#11",
+      "original": "si–no",
+      "corrected": "que",
+      "category": "contextual_wording",
+      "reason": "Correct the inspected contextual meaning or grammatical function, retaining the original occurrence and source evidence.",
+      "evidence": {
+        "surface": "אִם־",
+        "sourceEnglish": "except",
+        "language": "hbo",
+        "segments": [
+          {
+            "surface": "אִם",
+            "kind": "root",
+            "lemma": "[כִּי] אם",
+            "morphology": [
+              {
+                "code": "HTc",
+                "scheme": "STEPBible-TAHOT"
+              }
+            ],
+            "sourceEnglish": "except"
+          },
+          {
+            "surface": "־",
+            "kind": "punctuation",
+            "lemma": "־",
+            "morphology": [],
+            "sourceEnglish": null
+          }
+        ],
+        "context": "Second member of the inspected כי אם restriction. Paired más que avoids interpreting אם as a separate Spanish conditional si no here.",
+        "referenceUrls": [
+          "https://hb.openscriptures.org/parsing/HebrewMorphologyCodes.html"
+        ],
+        "relatedOccurrences": [
+          "TAHOT:Mic.6.8#10",
+          "TAHOT:Mic.6.8#11"
+        ]
+      }
+    }
+  ]
+}
