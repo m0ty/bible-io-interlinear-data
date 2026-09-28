@@ -7,12 +7,19 @@ permissions:
   contents: read
 jobs:
   verify:
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - os: ubuntu-latest
+            python: '3.13'
+          - os: windows-latest
+            python: '3.14'
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v7
         with:
-          python-version: '3.13'
+          python-version: ${{ matrix.python }}
       - uses: dart-lang/setup-dart@v1
         with:
           sdk: '3.11.4'
@@ -23,6 +30,7 @@ jobs:
       - name: Verify every prepared resource and generation input
         run: python tool/catalog.py
       - name: Reproduce Spanish source alignment and test failed imports
+        shell: bash
         run: |
           curl --fail --location --retry 3 \
             https://raw.githubusercontent.com/loveJesus/sword-modules-chirho/79df943ef7ff280fe6d05c1e7419dcdb655c80b1/raw/LJMTIntSpaChirho.zip \

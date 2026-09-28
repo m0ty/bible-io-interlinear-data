@@ -24,8 +24,9 @@ class SpanishGlossImportTest(unittest.TestCase):
         cls.sword = gloss.SwordSource(ARCHIVE)
 
     def test_installed_assets_reproduce(self):
-        gloss.verify(APP / gloss.ASSETS_PATH, self.files, self.corpus)
-        self.assertEqual((APP / gloss.CONSTANT_PATH).read_bytes().replace(b"\r\n", b"\n"), self.constant)
+        manifest_hash = gloss.verify(APP / gloss.ASSETS_PATH, self.files, self.corpus)
+        self.assertEqual((APP / gloss.CONSTANT_PATH).read_bytes().replace(b"\r\n", b"\n"),
+                         (manifest_hash + "\n").encode("ascii"))
         self.assertEqual(self.report["coverage"]["importedGlossTokens"], 269777)
         self.assertEqual(self.report["coverage"]["correctedGlossTokens"], 99)
         self.assertEqual(self.report["coverage"]["upstreamMixedStarGlossesCorrected"], 49)
@@ -34,6 +35,31 @@ class SpanishGlossImportTest(unittest.TestCase):
         files, constant, _, _ = gloss.build(APP, ARCHIVE)
         self.assertEqual(files, self.files)
         self.assertEqual(constant, self.constant)
+
+    def test_different_compression_preserves_source_verification(self):
+        root = self.scratch() / "assets"
+        shutil.copytree(APP / gloss.ASSETS_PATH, root)
+        path = "chapters/1CH.1.json.gz"
+        chapter = root / path
+        original = chapter.read_bytes()
+        transport = gzip.compress(gzip.decompress(original), compresslevel=1, mtime=0)
+        self.assertNotEqual(transport, original)
+        chapter.write_bytes(transport)
+        # Even equivalent JSON must fail if the stored transport hash is stale.
+        with self.assertRaisesRegex(ValueError, "transport hash/size mismatch"):
+            gloss.verify(root, self.files, self.corpus)
+        manifest = json.loads((root / "manifest.json").read_bytes())
+        resource = next(item for item in manifest["chapterResources"] if item["path"] == path)
+        resource["compressedSha256"] = gloss.digest(transport)
+        resource["bytes"] = len(transport)
+        (root / "manifest.json").write_bytes(gloss.json_bytes(manifest, pretty=True))
+        self.assertEqual(gloss.verify(root, self.files, self.corpus),
+                         gloss.digest((root / "manifest.json").read_bytes()))
+        # Transport tolerance must not permit changes to other manifest fields.
+        resource["sha256"] = "0" * 64
+        (root / "manifest.json").write_bytes(gloss.json_bytes(manifest, pretty=True))
+        with self.assertRaisesRegex(ValueError, "content differs: manifest.json"):
+            gloss.verify(root, self.files, self.corpus)
 
     def test_wrong_correction_original_is_rejected(self):
         records = copy.deepcopy(self.records)

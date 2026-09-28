@@ -81,7 +81,14 @@ Serialization uses UTF-8 JSON and LF. Gzip uses compression level 9, zero mtime,
 no filename, and OS byte 255. Output includes no timestamps or absolute paths.
 The generator source digest is recorded with LF normalization, so a deliberate
 importer edit requires regeneration. Repeated builds with the same generator
-and inputs produce byte-identical assets and manifest constants. The exact
+and inputs produce byte-identical assets and manifest constants when using the
+same compression implementation and version. Different zlib implementations
+(including zlib-ng) can produce different gzip bytes for identical JSON.
+Verification compares decompressed chapter bytes exactly against source-derived
+output and checks each installed gzip file's hash and size against the installed
+manifest. Only the regenerated manifest's compressed hashes and sizes may differ;
+all other metadata must match. The catalog still pins every installed byte.
+The exact
 normalized-LF bytes of `tool/spanish_gloss_corrections.json` are also fingerprinted
 and copied into the installed `corrections.json` resource.
 
@@ -151,7 +158,7 @@ placeholder would still be omitted. `GEN.2.10` is an example of a fully refused
 verse; `GEN.1.4` has all 12 source-word meanings. Other incomplete or absent
 coverage continues to use fallback.
 
-The complete generated asset root contains 933 files totaling 2,578,991 bytes,
+The committed asset root contains 933 files totaling 2,579,033 bytes,
 including 928 compressed chapters and the manifest, validation report, correction
 table, attribution notice, and original module configuration.
 

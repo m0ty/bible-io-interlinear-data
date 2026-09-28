@@ -4,7 +4,8 @@
 Requires Python 3.10+ and its standard library. The explicit input archive,
 reference-order snapshot, corpus manifest, and every corpus chapter are
 hash-checked before any output is replaced. --verify-only reconstructs the
-alignment from those inputs and compares every installed byte and occurrence.
+alignment from those inputs and compares every uncompressed byte and occurrence,
+while checking installed transport bytes against their manifest hashes.
 """
 
 from __future__ import annotations
@@ -88,6 +89,7 @@ def json_bytes(value: object, *, pretty: bool = False) -> bytes:
 
 def compressed(content: bytes) -> bytes:
     # GzipFile fixes the OS byte to 255 across platforms. No filename or time.
+    # The DEFLATE stream still depends on the zlib implementation/version.
     buffer = io.BytesIO()
     with gzip.GzipFile(filename="", mode="wb", fileobj=buffer, mtime=0, compresslevel=9) as stream:
         stream.write(content)
@@ -371,7 +373,7 @@ validation. Missing meanings retain the app's explicit English fallback.
                            "historicalMappingSha256": MAPPING_SHA256, "historicalEditionSha256": EDITION_SHA256},
         "generator": {"path": "tool/prepare_spanish_glosses.py", "sha256": digest(Path(__file__).read_bytes().replace(b"\r\n", b"\n")),
                       "correctionsPath": CORRECTIONS_PATH, "correctionsSha256": digest(corrections_bytes),
-                      "serialization": "UTF-8 JSON with LF; deterministic gzip level 9, mtime 0, no filename, OS 255"},
+                      "serialization": "UTF-8 JSON with LF; gzip level 9, mtime 0, no filename, OS 255; compressed bytes depend on zlib implementation/version"},
         "localCorrections": {"path": "corrections.json", "sha256": digest(corrections_bytes),
                              "count": len(corrections), "reviewStatus": CORRECTION_REVIEW_STATUS},
         "matchingRule": MATCHING_RULE, "structuralRules": STRUCTURAL_RULES, "coverage": report["coverage"],
@@ -394,18 +396,34 @@ validation. Missing meanings retain the app's explicit English fallback.
     return files, constant, report, corpus
 
 
-def verify(root: Path, expected: dict[str, bytes], corpus: Corpus) -> None:
+def verify(root: Path, expected: dict[str, bytes], corpus: Corpus) -> str:
     require(root.is_dir() and not root.is_symlink(), f"Missing/unsafe sidecar directory: {root}")
     entries = list(root.rglob("*"))
     require(not any(path.is_symlink() for path in entries), "Sidecars must not contain symlinks")
     actual_paths = {path.relative_to(root).as_posix() for path in entries if path.is_file()}
     require(actual_paths == set(expected), "Sidecar inventory differs (missing or extra files)")
     manifest = json.loads(expected["manifest.json"])
+    installed_manifest_bytes = (root / "manifest.json").read_bytes()
+    installed_manifest = json.loads(installed_manifest_bytes)
+    installed_resources = {resource["path"]: resource for resource in installed_manifest["chapterResources"]}
+    chapter_paths = {resource["path"] for resource in manifest["chapterResources"]}
     seen: set[str] = set()
     for name, content in expected.items():
+        if name == "manifest.json" or name in chapter_paths:
+            continue
         require((root / name).read_bytes() == content, f"Source-derived sidecar content differs: {name}")
     for resource in manifest["chapterResources"]:
-        raw = gzip.decompress((root / resource["path"]).read_bytes())
+        name = resource["path"]
+        transport = (root / name).read_bytes()
+        raw = gzip.decompress(transport)
+        require(raw == gzip.decompress(expected[name]), f"Source-derived sidecar content differs: {name}")
+        installed = installed_resources[name]
+        require(digest(transport) == installed["compressedSha256"] and len(transport) == installed["bytes"],
+                f"Sidecar transport hash/size mismatch: {name}")
+        # Allow a different compressor, but only for these two transport fields.
+        # All content, provenance and other manifest fields must still reproduce.
+        resource["compressedSha256"] = digest(transport)
+        resource["bytes"] = len(transport)
         require(digest(raw) == resource["sha256"], "Sidecar uncompressed SHA-256 mismatch")
         payload = json.loads(raw)
         key = (resource["book"], resource["chapter"])
@@ -417,6 +435,8 @@ def verify(root: Path, expected: dict[str, bytes], corpus: Corpus) -> None:
             require("*" not in gloss, "Asterisk placeholder in installed sidecar")
             seen.add(occurrence)
     require(len(seen) == manifest["coverage"]["importedGlossTokens"], "Installed coverage mismatch")
+    require(installed_manifest_bytes == json_bytes(manifest, pretty=True), "Source-derived sidecar content differs: manifest.json")
+    return digest(installed_manifest_bytes)
 
 
 def clean_temporary(path: Path, parent: Path) -> None:
@@ -499,14 +519,18 @@ def main() -> None:
     app = arguments.data_root.resolve()
     files, constant, report, corpus = build(app, arguments.source_archive.resolve())
     if arguments.verify_only:
-        verify(app / ASSETS_PATH, files, corpus)
+        manifest_sha256 = verify(app / ASSETS_PATH, files, corpus)
+        constant = (manifest_sha256 + "\n").encode("ascii")
         require((app / CONSTANT_PATH).read_bytes().replace(b"\r\n", b"\n") == constant, "Manifest digest record differs")
+        asset_bytes = sum((app / ASSETS_PATH / name).stat().st_size for name in files)
     else:
         install(app, files, constant, corpus)
+        manifest_sha256 = digest(files["manifest.json"])
+        asset_bytes = sum(map(len, files.values()))
     print(json.dumps({"result": "verified" if arguments.verify_only else "generated-and-verified",
-                      "manifestSha256": digest(files["manifest.json"]), "coverage": report["coverage"],
+                      "manifestSha256": manifest_sha256, "coverage": report["coverage"],
                       "sourceChaptersVerified": len(corpus.resources), "files": len(files),
-                      "assetBytes": sum(map(len, files.values()))}, sort_keys=True))
+                      "assetBytes": asset_bytes}, sort_keys=True))
 
 
 if __name__ == "__main__":

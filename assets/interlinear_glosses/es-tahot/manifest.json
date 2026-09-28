@@ -39,10 +39,10 @@
   },
   "generator": {
     "path": "tool/prepare_spanish_glosses.py",
-    "sha256": "ccc8502155ffa349248bfb15525c55adcbe5562184dee5b3de2a45f4a22fc63e",
+    "sha256": "722ba92a72125922a0f084edfbe776718a7aae15121ebf64ffd00ddb8c0c54aa",
     "correctionsPath": "tool/spanish_gloss_corrections.json",
     "correctionsSha256": "7849577d0922fef881ddf9ab2d8d6fbcda7047fe21fe34e96d9d90977677eb2e",
-    "serialization": "UTF-8 JSON with LF; deterministic gzip level 9, mtime 0, no filename, OS 255"
+    "serialization": "UTF-8 JSON with LF; gzip level 9, mtime 0, no filename, OS 255; compressed bytes depend on zlib implementation/version"
   },
   "localCorrections": {
     "path": "corrections.json",

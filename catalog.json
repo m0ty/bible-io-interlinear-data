@@ -22,7 +22,7 @@
     {
       "id": "es-tahot",
       "manifestPath": "assets/interlinear_glosses/es-tahot/manifest.json",
-      "manifestSha256": "be858d19f32bd120147b4c0a5a28a36c7a7788dfa8f32ba847712ba1f7f7bbce",
+      "manifestSha256": "96635193b233fd3ea028a48cf3553db1317763ac2cbb440b743cf675d5091384",
       "chapters": 928,
       "tokens": 269777,
       "humanReview": "Provisional AI-assisted; not fully human-reviewed; 99 AI-assisted corrections"
@@ -35,9 +35,9 @@
     "tool/generate_interlinear_assets.dart": "7251d019eadefabc07222f6a1a3685e9069355fd6dd8fcc4198de34f35e80052",
     "tool/inputs/spanish-ot-reference.json": "a58eb41654c415607a956d8cd63255d24d648a4f7c1877d6cd1e44d147525990",
     "tool/interlinear_tool_support.dart": "482a6ee0560d7d5b47abcab682bf9db25c43c69ec4a76773e125fe4d2df0fff4",
-    "tool/prepare_spanish_glosses.py": "ccc8502155ffa349248bfb15525c55adcbe5562184dee5b3de2a45f4a22fc63e",
+    "tool/prepare_spanish_glosses.py": "722ba92a72125922a0f084edfbe776718a7aae15121ebf64ffd00ddb8c0c54aa",
     "tool/spanish_gloss_corrections.json": "7849577d0922fef881ddf9ab2d8d6fbcda7047fe21fe34e96d9d90977677eb2e",
-    "tool/test_prepare_spanish_glosses.py": "3ead53081ac063454c02b17b3c5e152b31b9edde18fd955997831579dcfc2b20"
+    "tool/test_prepare_spanish_glosses.py": "f83d2ce7e1f367f483b1871b8b40efe9e786078f5f322431cf7f00591c385f80"
   },
   "files": [
     {
@@ -10677,8 +10677,8 @@
     },
     {
       "path": "assets/interlinear_glosses/es-tahot/manifest.json",
-      "bytes": 297435,
-      "sha256": "be858d19f32bd120147b4c0a5a28a36c7a7788dfa8f32ba847712ba1f7f7bbce"
+      "bytes": 297477,
+      "sha256": "96635193b233fd3ea028a48cf3553db1317763ac2cbb440b743cf675d5091384"
     },
     {
       "path": "assets/interlinear_glosses/es-tahot/source-module.conf",
