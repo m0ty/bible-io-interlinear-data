@@ -18,6 +18,8 @@ jobs:
           sdk: '3.11.4'
       - run: dart pub get --enforce-lockfile
       - run: dart analyze
+      - name: Test portable catalog ordering
+        run: python -B -m unittest discover -s tests
       - name: Verify every prepared resource and generation input
         run: python tool/catalog.py
       - name: Reproduce Spanish source alignment and test failed imports

@@ -30,7 +30,7 @@
   ],
   "generationInputs": {
     "tool/acquire_sources.dart": "2855309bfccf6a0111a83b314b3e7b51853984fc240854ca8a1f964b8a7a7853",
-    "tool/catalog.py": "35511d556f6fa80f013d767bc10c2eee9d288c06347729c8477b0d1aafea92f3",
+    "tool/catalog.py": "e42321b8ccbc8cc912a0aa66b79adffec571c69d7958047240cc3414519bfed2",
     "tool/extract_spanish_reference.py": "3ec47a1a0fd9ab942a5c78b324aaf1733808559661e96539d4c5c2b90491fcf5",
     "tool/generate_interlinear_assets.dart": "7251d019eadefabc07222f6a1a3685e9069355fd6dd8fcc4198de34f35e80052",
     "tool/inputs/spanish-ot-reference.json": "a58eb41654c415607a956d8cd63255d24d648a4f7c1877d6cd1e44d147525990",
@@ -40,6 +40,11 @@
     "tool/test_prepare_spanish_glosses.py": "3ead53081ac063454c02b17b3c5e152b31b9edde18fd955997831579dcfc2b20"
   },
   "files": [
+    {
+      "path": "assets/interlinear/THIRD_PARTY_NOTICES.md",
+      "bytes": 4766,
+      "sha256": "7fd3a4b7b864dcc10b84adddb6524d6461bc05ef1e7c8961083e0a7ca722d6dc"
+    },
     {
       "path": "assets/interlinear/asset-index.json",
       "bytes": 2280,
@@ -6021,9 +6026,9 @@
       "sha256": "37af75f19a83b06cd8fe59811bbae07a7c7d97666aef6e4e380626108f531c4c"
     },
     {
-      "path": "assets/interlinear/THIRD_PARTY_NOTICES.md",
-      "bytes": 4766,
-      "sha256": "7fd3a4b7b864dcc10b84adddb6524d6461bc05ef1e7c8961083e0a7ca722d6dc"
+      "path": "assets/interlinear_glosses/es-tahot/NOTICE.md",
+      "bytes": 1689,
+      "sha256": "568e1f60179cddda777d0edfe1af12b4441871065780937610d4dc3f44e74f88"
     },
     {
       "path": "assets/interlinear_glosses/es-tahot/chapters/1CH.1.json.gz",
@@ -10674,11 +10679,6 @@
       "path": "assets/interlinear_glosses/es-tahot/manifest.json",
       "bytes": 297435,
       "sha256": "be858d19f32bd120147b4c0a5a28a36c7a7788dfa8f32ba847712ba1f7f7bbce"
-    },
-    {
-      "path": "assets/interlinear_glosses/es-tahot/NOTICE.md",
-      "bytes": 1689,
-      "sha256": "568e1f60179cddda777d0edfe1af12b4441871065780937610d4dc3f44e74f88"
     },
     {
       "path": "assets/interlinear_glosses/es-tahot/source-module.conf",

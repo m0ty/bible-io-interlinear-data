@@ -26,7 +26,8 @@ def read(root, path):
 
 def inventory(root):
     result = []
-    for path in sorted((root / "assets").rglob("*")):
+    # Sort strings: Path ordering is case-insensitive on Windows, unlike Linux.
+    for path in sorted((root / "assets").rglob("*"), key=lambda path: path.relative_to(root).as_posix()):
         require(not path.is_symlink(), f"Symlink in data: {path}")
         if path.is_file():
             content = path.read_bytes()
@@ -121,7 +122,7 @@ def validate(root):
 def build(root):
     datasets = validate(root)
     sources = {}
-    for path in sorted((root / "tool").rglob("*")):
+    for path in sorted((root / "tool").rglob("*"), key=lambda path: path.relative_to(root).as_posix()):
         if path.is_file() and path.suffix in (".py", ".dart", ".json"):
             sources[path.relative_to(root).as_posix()] = digest(path.read_bytes().replace(b"\r\n", b"\n"))
     return {"schemaVersion": 1, "name": "bible_io_interlinear_data", "version": VERSION,
